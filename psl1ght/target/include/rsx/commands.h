@@ -89,6 +89,10 @@ void realityVertex4f(gcmContextData *context, float x, float y, float z, float w
 
 void realityTexCoord2f(gcmContextData *context, float s, float t);
 
+void realityAttr4f(gcmContextData *context, int attr, float x, float y, float z, float w);
+void realityAttr2f(gcmContextData *context, int attr, float x, float y);
+
+
 //Vertex buffers
 //Bind an input attribute to a vertex buffer array
 
@@ -142,6 +146,7 @@ typedef struct {
 } realityTexture;
 
 void realitySetTexture(gcmContextData *context, uint32_t unit, realityTexture *tex);
+void realitySetTextureControl(gcmContextData *context, uint32_t unit,uint32_t enable,uint16_t minlod,uint16_t maxlod,uint8_t maxaniso);
 
 #define REALITY_FRONT_FACE_CW 			0x00000900
 #define REALITY_FRONT_FACE_CCW			0x00000901

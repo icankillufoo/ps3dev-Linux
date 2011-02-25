@@ -89,11 +89,7 @@ struct linger
 #define PF_INET			AF_INET
 #define PF_INET6		AF_INET6
 
-#define ESHUTDOWN				110
-#define NET_EINPROGRESS 	36
-
 #define SOCKET_FD_MASK	0x40000000
-
 
 EXTERN_BEGIN
 
